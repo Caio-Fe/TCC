@@ -38,19 +38,19 @@
                 </a>
                 <!--Itens da busca avançada-->
                 <ul class="dropdown-menu " aria-labelledby="navbarScrollingDropdown" >
-                    <li><a class="dropdown-item" href="maisvistos.html">Titulo 1</a></li>
+                    <li><a class="dropdown-item" href="projeto_exemplo.html">Titulo 1</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="maisvistos.html">Titulo 2</a></li>
+                    <li><a class="dropdown-item" href="projeto_exemplo.html">Titulo 2</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="maisvistos.html">Titulo 3</a></li>
+                    <li><a class="dropdown-item" href="projeto_exemplo.html">Titulo 3</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="maisvistos.html">Titulo 4</a></li>
+                    <li><a class="dropdown-item" href="projeto_exemplo.html">Titulo 4</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="maisvistos.html">Titulo 5</a></li>
+                    <li><a class="dropdown-item" href="projeto_exemplo.html">Titulo 5</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="maisvistos.html">Titulo 6</a></li>
+                    <li><a class="dropdown-item" href="projeto_exemplo.html">Titulo 6</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="maisvistos.html">Ver Todos</a></li>
+                    <li><a class="dropdown-item" href="projeto_exemplo.html">Ver Todos</a></li>
   
                   </ul>
                 </li>
@@ -96,6 +96,13 @@
                   Palavra-Chave
                 </a>
               </li>
+              <!-- só aparece este quarto link nestas onde se estaria logado;-->
+              <li>
+                <a href="cadastrarprojeto.html" class="nav-link link-dark bg-light"style="margin-top:2px">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#cadastrarprojeto"></use></svg>
+                  Cadastrar Projeto
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -105,36 +112,53 @@
     <!--Grid do corpo-->
     <div class="col-lg-6" style="padding-top:100px">
     <div class="container" style=" background-color: rgb(176, 191, 255);text-align: center;margin-left:30% ;margin-right:30%;margin-bottom:30%">
-        <div class="container">
+        <!--Grid do counteudo 1-->
+        <div class="row" style="padding:10px">
+          <div class="col bg-white" style="margin-right:10px">
+          
+            <h5>Preencha os campos abaixo:</h5>
+          <div>
+            <div class="container">
             <div class="row">
-              <div class="col" style="margin: 5%;margin-left: 30%;margin-right: 30%;border:solid 1px">
-                <h3 style="background-color:white;">FAETERJ-Rio</h3>
-                <h5 >Contato</h5><br>
-                    <p style="border-bottom:solid 1px">
-                    Telefone: (21) 2332-4048<br>
-                    Email: sec_acad@faeterj-rio.edu.br<br>
-                    Rua Clarimundo de Melo, 847 Quintino, Rio de Janeiro, RJ<br><br>
-                </p>
-                
-                <div class="col">
-                    <h3 style="background-color:white;">FAETERJ Petrópolis</h3>
-                   <p style="border-bottom:solid 1px">
-                    Telefone: (24) 2235-1079<br>
-                    Email: contato@faeterj-petropolis.edu.br<br>
-                    Avenida Getúlio Vargas, 335 - Quitandinha - Petrópolis - RJ<br><br>
-                </p>
-                   </div>
-                   <div class="col">
-                     <h3 style="background-color:white;">FAETERJ Bom Jesus</h3>
-                     Telefone: (22) 3831-6716<br>
-                     Email: -<br>
-                     Rua Aristides Figueiredo, 147, Centro Bom Jesus do Itabapoana – RJ.<br><br>
-                 </div>
-              </div>
+                <div class="col">Titulo</div>
+                <div class="col"><input type="text"></div>
+            </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">Orientador</div>
+                    <div class="col"><input type="text"></div>
+                </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">Aluno</div>
+                        <div class="col"><input type="text"></div>
+                    </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">Segundo Aluno (se houver)</div>
+                            <div class="col"><input type="text"></div>
+                        </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">Orientador</div>
+                                <div class="col"><input type="text"></div>
+                            </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">Anexo de DOC</div>
+                                    <div class="col"><input type="text"></div>
+                                    <!-- este input seria diferente? como isto iria para o banco em um form action?-->
+                                </div>
+                                <button type="submit"style="margin-bottom:5%"><a class="btn btn-black" href="logado.html"  role="button">Cadastrar</a></button> 
+                                <!-- para teste o botão está redirecionando para a tela inicial de usuário de logado-->
           </div>
-               
-        </div>
     </div>
+</div>
 </div>
 </div>
 </div>

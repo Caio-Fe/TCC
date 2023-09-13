@@ -38,19 +38,19 @@
                 </a>
                 <!--Itens da busca avançada-->
                 <ul class="dropdown-menu " aria-labelledby="navbarScrollingDropdown" >
-                    <li><a class="dropdown-item" href="maisvistos.html">Titulo 1</a></li>
+                    <li><a class="dropdown-item" href="projeto_exemplo.html">Titulo 1</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="maisvistos.html">Titulo 2</a></li>
+                    <li><a class="dropdown-item" href="projeto_exemplo.html">Titulo 2</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="maisvistos.html">Titulo 3</a></li>
+                    <li><a class="dropdown-item" href="projeto_exemplo.html">Titulo 3</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="maisvistos.html">Titulo 4</a></li>
+                    <li><a class="dropdown-item" href="projeto_exemplo.html">Titulo 4</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="maisvistos.html">Titulo 5</a></li>
+                    <li><a class="dropdown-item" href="projeto_exemplo.html">Titulo 5</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="maisvistos.html">Titulo 6</a></li>
+                    <li><a class="dropdown-item" href="projeto_exemplo.html">Titulo 6</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="maisvistos.html">Ver Todos</a></li>
+                    <li><a class="dropdown-item" href="projeto_exemplo.html">Ver Todos</a></li>
   
                   </ul>
                 </li>
@@ -79,7 +79,7 @@
         <div class="d-flex flex-column flex-shrink-0 p-3 " style=" width: 280px; margin-top:50px;height: 90%;">
             <ul class="nav nav-pills flex-column mb-auto">
               <li class="nav-item">
-                <a href="ano.html" class="nav-link link-dark bg-light">
+                <a href="ano.html" class="nav-link link-dark bg-light" >
                   <svg class="bi me-2" width="16" height="16"><use xlink:href="#ano"></use></svg>
                   Ano
                 </a>
@@ -103,23 +103,26 @@
     
     <!--Conteudo do corpo-->
     <!--Grid do corpo-->
-    <div class="col-lg-6" style="padding-top:100px;">
-    <div class="container" style=" background-color: rgb(176, 191, 255);text-align: center;margin-left:30% ;margin-right:30%;margin-bottom:30%">
-        <div class="container">
-            <div class="row">
-              <div class="col">
-                <h3 style="background-color:white;margin: 5%;margin-left: 30%;margin-right: 30%">FAETERJ-Rio</h3>
-              </div>
-          </div>
-          <div class="col">
-            <h3 style="background-color:white;;margin-left: 30%;margin-right: 30%;margin-bottom: 5%">FAETERJ Petrópolis</h3>
-          </div>
-          <div class="col">
-            <h3 style="background-color:white;;margin-left: 30%;margin-right: 30%">FAETERJ Bom Jesus</h3><br><br>
-          </div>
-        </div>
+    <div class="col-lg-6" style="padding-top:100px">
+    <div class="container" style=" background-color: rgb(176, 191, 255);text-align: center;margin-left:30% ;margin-right:30%;margin-bottom:30%;border:solid 1px">
+        <h3>Login</h3>
+    <div style="margin: 5%;margin-left: 30%;margin-right: 30%;">
+      
+        <form>
+            <div class="mb-3">
+              <label for="usuário" class="form-label">Usuário</label>
+              <input type="email" class="form-control" id="inputUsuario" aria-describedby="usuarioHelp"> <!-- campo usuario-->
+              <div id="usuarioHelp" class="form-text">Nunca compartilharemos seu usuário com mais ninguém.</div>
+            </div>
+            <div class="mb-3">
+              <label for="inputSenha" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="inputSenha">
+              <!-- campo senha-->
+            </div>
+
+            <button type="submit"><a class="btn btn-black" href="logado.html"  role="button">Entrar</a></button> <!-- não tem validação de login, apenas um link para a tela de logado-->
+          </form>
     </div>
-</div>
 </div>
 </div>
 </body>
@@ -136,12 +139,12 @@
              <!-- Itens da navegação -->
              <ul class="navbar-nav gap-5">
 
-                <li class="nav-item" >
-                    <a class="nav-link active" href="contato.html">Contato</a>
-                  </li>
-                  <li class="nav-item" >
-                     <a class="nav-link active" href="creditos.html">Créditos</a>
-                  </li>
+              <li class="nav-item" >
+                <a class="nav-link active" href="contato.html">Contato</a>
+              </li>
+              <li class="nav-item" >
+                 <a class="nav-link active" href="creditos.html">Créditos</a>
+              </li>
                 <li class="nav-item" >
                     <a class="nav-link active" href="">Estatísticas</a>
                 </li>

@@ -21,8 +21,8 @@
     <div>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4304f0;">
         <div class="container-fluid">
-          <a class="navbar-brand" href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSVxIvZ12XF4kvpLU8a0YNuR7Wfei0RXGdZWs-13Tceie7dABMI48J3fX7BOc1I5JxBA&usqp=CAU" alt="FAETERJ-Rio" width="300" height="70"></i></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.php"><img src="img/images.jpeg" alt="FAETERJ-Rio" width="300" height="70"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
@@ -30,32 +30,33 @@
              <ul class="navbar-nav gap-lg-5" style="padding-left:250px">
 
               <li class="nav-item" >
-                <a class="nav-link active" href="index.html">Início</a>
+                <a class="nav-link active" href="index.php">Início</a>
               </li>
-              <li class="nav-item dropdown">
+              <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Mais Vistos
-                </a>
-                <!--Itens da busca avançada-->
-                <ul class="dropdown-menu " aria-labelledby="navbarScrollingDropdown" >
-                    <li><a class="dropdown-item" href="projeto_exemplo.html">Titulo 1</a></li>
+                </a> -->
+                <!--Itens da busca avançada // talvez remover pois seriam os projetos com mais visitas, difícil de fazer?-->
+                <!-- <ul class="dropdown-menu " aria-labelledby="navbarScrollingDropdown" >
+                    <li><a class="dropdown-item" href="projeto_exemplo.php">Titulo 1</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="projeto_exemplo.html">Titulo 2</a></li>
+                    <li><a class="dropdown-item" href="projeto_exemplo.php">Titulo 2</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="projeto_exemplo.html">Titulo 3</a></li>
+                    <li><a class="dropdown-item" href="projeto_exemplo.php">Titulo 3</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="projeto_exemplo.html">Titulo 4</a></li>
+                    <li><a class="dropdown-item" href="projeto_exemplo.php">Titulo 4</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="projeto_exemplo.html">Titulo 5</a></li>
+                    <li><a class="dropdown-item" href="projeto_exemplo.php">Titulo 5</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="projeto_exemplo.html">Titulo 6</a></li>
+                    <li><a class="dropdown-item" href="projeto_exemplo.php">Titulo 6</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="projeto_exemplo.html">Ver Todos</a></li>
-  
+                    <li><a class="dropdown-item" href="projeto_exemplo.php">Ver Todos</a></li> -->
+                    <!-- iria para a lista de todos os projetos -->
+                    <!--
                   </ul>
-                </li>
+                </li> -->
               <li class="nav-item ">
-                <a class="nav-link" href="buscaavancada.html">Busca Avançada</a>
+                <a class="nav-link" href="buscaavancada.php">Busca Avançada</a>
               </li>      
             </ul>
           </div>
@@ -65,7 +66,7 @@
           </form>
           <ul class="navbar-nav "style="padding-right:50px;"> 
             <li class="nav-item ">
-            <a class="nav-link" href="login.html">Login</a>
+            <a class="nav-link" href="login.php">Login</a>
           </li></ul>
      
         </div>
@@ -79,19 +80,19 @@
         <div class="d-flex flex-column flex-shrink-0 p-3 " style=" width: 280px; margin-top:50px;height: 90%;">
             <ul class="nav nav-pills flex-column mb-auto">
               <li class="nav-item">
-                <a href="ano.html" class="nav-link link-dark bg-light">
+                <a href="ano.php" class="nav-link link-dark bg-light">
                   <svg class="bi me-2" width="16" height="16"><use xlink:href="#ano"></use></svg>
                   Ano
                 </a>
               </li>
               <li>
-                <a href="orientador.html" class="nav-link link-dark bg-light"style="margin-top:2px">
+                <a href="orientador.php" class="nav-link link-dark bg-light"style="margin-top:2px">
                   <svg class="bi me-2" width="16" height="16"><use xlink:href="#orientador"></use></svg>
                   Orientador
                 </a>
               </li>
               <li>
-                <a href="palavrachave.html" class="nav-link link-dark active"style="margin-top:2px"aria-current="page">
+                <a href="palavrachave.php" class="nav-link link-dark bg-light"style="margin-top:2px">
                   <svg class="bi me-2" width="16" height="16"><use xlink:href="#palavra-chave"></use></svg>
                   Palavra-Chave
                 </a>
@@ -101,47 +102,21 @@
         </div>
     </div>
     
-<!--Conteudo do corpo-->
+    <!--Conteudo do corpo-->
     <!--Grid do corpo-->
     <div class="col-lg-6" style="padding-top:100px">
-      <div class="container" style=" background-color: rgb(176, 191, 255);text-align: center;margin-left:30% ;margin-right:30%;margin-bottom:30%">
-      <div>
-        <div class="container">
-          <div class="row">
-            <div class="col" style="border:solid 2px">
-             <h4 style="background-color:rgb(255, 193, 24)">Palavra-Chave</h4>
-             <!-- conteúdo de exemplo-->
-             <p style="background-color:rgb(176, 198, 255)">Biblioteca</p>
-             <p style="background-color:rgb(161, 174, 243)">Repositório</p>
-             <p style="background-color:rgb(176, 198, 255)">HTML</p>
-             <p style="background-color:rgb(161, 174, 243)">Javascript</p>
-             <p style="background-color:rgb(176, 198, 255)">MySQL</p>
-             <p style="background-color:rgb(161, 174, 243)">PHP</p>
-             <p style="background-color:rgb(176, 198, 255)">CSS</p>
-             <p style="background-color:rgb(161, 174, 243)">Saúde</p>
-             <p style="background-color:rgb(176, 198, 255)">Educação</p>
-             <p style="background-color:rgb(161, 174, 243)">Construção</p>
-            </div>
-            <div class="col" style="border:solid 2px">
-             <h4 style="background-color:rgb(255, 193, 24)">Ocorrências</h4>
-             <!-- conteúdo de exemplo-->
-             <p style="background-color:rgb(176, 198, 255)">1</p>
-             <p style="background-color:rgb(161, 174, 243)">1</p>
-             <p style="background-color:rgb(176, 198, 255)">1</p>
-             <p style="background-color:rgb(161, 174, 243)">1</p>
-             <p style="background-color:rgb(176, 198, 255)">1</p>
-             <p style="background-color:rgb(161, 174, 243)">1</p>
-             <p style="background-color:rgb(176, 198, 255)">1</p>
-             <p style="background-color:rgb(161, 174, 243)">0</p>
-             <p style="background-color:rgb(176, 198, 255)">0</p>
-             <p style="background-color:rgb(161, 174, 243)">0</p>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-  </div>
-  </div>
+    <div class="container" style=" background-color: rgb(176, 191, 255);text-align: center; margin-left:30% ;margin-right:30%;margin-bottom:30%">
+       
+    <!--//refazendo a busca. não funcionou a página unica...-->
+    <?php
+        include_once("conexao.php");
+        $busca = $_POST['busca'];
+        $sql = "SELECT * FROM projeto WHERE titulo LIKE '%$busca%' ORDER BY titulo";
+        $resultado = mysqli_query($conn, $sql);
+        $total = mysqli_num_rows($resultado);
+    ?>
+    </div>
+    </div>
 </body>
 
 <footer>
@@ -156,12 +131,12 @@
              <!-- Itens da navegação -->
              <ul class="navbar-nav gap-5">
 
-              <li class="nav-item" >
-                <a class="nav-link active" href="contato.html">Contato</a>
-              </li>
-              <li class="nav-item" >
-                 <a class="nav-link active" href="creditos.html">Créditos</a>
-              </li>
+                <li class="nav-item" >
+                  <a class="nav-link active" href="contato.php">Contato</a>
+                </li>
+                <li class="nav-item" >
+                   <a class="nav-link active" href="creditos.php">Créditos</a>
+                </li>
                 <li class="nav-item" >
                     <a class="nav-link active" href="">Estatísticas</a>
                 </li>

@@ -6,22 +6,25 @@
             <ul class="nav nav-pills flex-column mb-auto">
               <li class="nav-item">
                 <a href="ano.php" class="nav-link link-dark bg-light" style="color:#435281">
-                  <svg class="bi me-2" width="16" height="16" ><use xlink:href="#ano"></use></svg>
-                    Ano
+                <svg class="bi me-2" width="16" height="16">
+                    <use xlink:href="bootstrap-icons.svg#calendar"/>
+                </svg>Ano
                 </a>
-              </li>
-              <li>
-                <a href="orientador.php" class="nav-link link-dark bg-light"style="margin-top:2px;color:#435281;">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#orientador"></use></svg>
-                  Orientador
+            </li>
+            <li>
+                <a href="orientador.php" class="nav-link link-dark bg-light" style="margin-top:2px; color:#435281;">
+                <svg class="bi me-2" width="16" height="16">
+                    <use xlink:href="bootstrap-icons.svg#mortarboard-fill"/>
+                </svg>Orientador
                 </a>
-              </li>
-              <li>
-                <a href="palavrachave.php" class="nav-link link-dark bg-light"style="margin-top:2px;color:#435281;">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#palavra-chave"></use></svg>
-                  Palavra-Chave
+            </li>
+            <li>
+                <a href="palavrachave.php" class="nav-link link-dark bg-light" style="margin-top:2px;color:#435281;">
+                <svg class="bi me-2" width="16" height="16">
+                    <use xlink:href="bootstrap-icons.svg#key"/>
+                </svg>Palavra-Chave
                 </a>
-              </li>
+            </li>
             </ul>
           </div>
         </div>

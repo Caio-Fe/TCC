@@ -1,16 +1,12 @@
-// dbcon.php
-
 <?php
-	$host = "localhost";
-	$user = "root";
-	$password = "";
-	$database = "repositorio_tccs";
 
-	$con = mysqli_connect($host, $user, $password, $database);
+$host = 'localhost';
+$user = 'root';
+$password = '';
+$database = 'repositorio_tccs';
 
-	if (!$con){
-		?>
-			<script>alert("Connection Unsuccessful!!!");</script>
-		<?php
-	}
-?>
+$con = new mysqli($host, $user, $password, $database);
+
+if ($con->connect_error) {
+    exit('Falha na conexão: '.$con->connect_error);
+}

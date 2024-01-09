@@ -53,7 +53,9 @@
                     <input name="senha" id="senha" type="password" class="form-control" placeholder="Senha">
                 </div>
 
-                <?php if (isset($_GET['login']) && $_GET['login'] == 'erro') { ?>
+                <?php
+                // if user login fails
+                if (isset($_GET['login']) && $_GET['login'] == 'erro') { ?>
 
                     <div class="text-danger">
                     Usuário ou senha inválido(s)
@@ -61,7 +63,13 @@
 
                 <?php } ?>
 
-                <?php if (isset($_GET['login']) && $_GET['login'] == 'erro2') { ?>
+                <?php
+                // if visitor tries to access a restricted page without logging in
+                if (isset($_GET['login']) && $_GET['login'] == 'erro2') {
+                    unset($_SESSION['autenticado']);
+                    unset($_SESSION['id']);
+                    unset($_SESSION['perfil_id']);
+                    unset($_SESSION['email']); ?>
 
                     <div class="text-danger">
                     Faça login antes de acessar as páginas protegidas

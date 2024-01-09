@@ -26,7 +26,7 @@ require_once 'validador_acesso.php';
     crossorigin="anonymous">
     </script>
     <!--Logo Faeterj + Barra de navegação-->
-    <?php include_once 'header.php'; ?>
+    <?php include_once 'headerAdmin.php'; ?>
 
     <!--Grid do menu lateral com o corpo-->
     <?php include_once 'lateralAdmin.php'; ?>

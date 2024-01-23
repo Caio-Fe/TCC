@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Repositório: Orientador</title>
+    <title>Repositório: Ano</title>
     <!-- add icon link to the page-->
     <link rel="icon" href="img/image2.jpg" type="image/x-icon">
 </head>
@@ -33,22 +33,22 @@
     margin-left:60% ;margin-right:30%;margin-bottom:15%; margin-top:8%; color:#000;">
             <?php
 include_once 'dbcon.php';
-$selectQuery = 'SELECT orientador FROM projects';
+$selectQuery = 'SELECT ano FROM projects';
 // squery saves the result of the query
 $squery = mysqli_query($con, $selectQuery);
-$orientadores = [];
+$anos = [];
 $counter = 0;
 // result here is an array with the data from the database
 while ($result = mysqli_fetch_assoc($squery)) {
-    //salva os orientadores com projetos em um array
-    if(!in_array($result['orientador'], $orientadores)) {
-        $orientadores[$counter] = $result['orientador'];
+    //salva os anos com projetos em um array
+    if(!in_array($result['ano'], $anos)) {
+        $anos[$counter] = $result['ano'];
         $counter++;
     }
 }
-foreach($orientadores as $orientador) {
+foreach($anos as $ano) {
     $projetos = 0;
-    $selectQuery = "SELECT orientador FROM projects WHERE orientador LIKE '$orientador'";
+    $selectQuery = "SELECT ano FROM projects WHERE ano LIKE '$ano'";
     $squery = mysqli_query($con, $selectQuery);
     while ($result = mysqli_fetch_assoc($squery)) {
         $projetos++;
@@ -58,7 +58,7 @@ foreach($orientadores as $orientador) {
     echo "<div class='row' style='border-width:5px; border-style:solid; border-color:#435281'>";
     echo "<div class='col'>";
     echo "<h4 style='background-color:rgb(255, 193, 24)'>Orientador</h4>";
-    echo "<p style='background-color:rgb(176, 198, 255)'>$orientador</p>";
+    echo "<p style='background-color:rgb(176, 198, 255)'>$ano</p>";
     echo "</div>";
     echo "<div class='col'>";
     echo "<h4 style='background-color:rgb(255, 193, 24)'>Projetos</h4>";

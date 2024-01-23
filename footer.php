@@ -4,26 +4,22 @@
         <div class="container-fluid">
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        data-bs-target="#navbarNav2" aria-controls="navbarNav" aria-expanded="false"
         aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav2">
+            <br />
             <!-- Itens da navegação -->
             <ul class="navbar-nav gap-5">
                 <li class="nav-item" >
-                    <a class="nav-link active" href="contato.php">
+                    <a class="btn btn-outline-light btn" href="contato.php">
                         Contato
                     </a>
                 </li>
                 <li class="nav-item" >
-                    <a class="nav-link active" href="creditos.php">
+                    <a class="btn btn-outline-light btn" href="creditos.php">
                         Créditos
-                    </a>
-                </li>
-                <li class="nav-item" >
-                    <a class="nav-link active" href="">
-                        Estatísticas
                     </a>
                 </li>
             </ul>

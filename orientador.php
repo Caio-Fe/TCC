@@ -45,7 +45,17 @@ while ($result = mysqli_fetch_assoc($squery)) {
         $orientadores[$counter] = $result['orientador'];
         $counter++;
     }
-}
+}?>
+            <div>
+                <table class="table table-striped table-hover">
+                    <thead style=" background-color:#ffc118;">
+                        <tr>
+                            <th scope="col">Orientador</th>
+                            <th scope="col">Projetos</th>
+                        </tr>
+                    </thead>
+                    <tbody style="background-color:#b0c6ff;">
+                        <?php
 foreach($orientadores as $orientador) {
     $projetos = 0;
     $selectQuery = "SELECT orientador FROM projects WHERE orientador LIKE '$orientador'";
@@ -53,31 +63,19 @@ foreach($orientadores as $orientador) {
     while ($result = mysqli_fetch_assoc($squery)) {
         $projetos++;
     }
-    echo "<div>";
-    echo "<div class='container'>";
-    echo "<div class='row' style='border-width:5px; border-style:solid; border-color:#435281'>";
-    echo "<div class='col'>";
-    echo "<h4 style='background-color:rgb(255, 193, 24)'>Orientador</h4>";
-    echo "<p style='background-color:rgb(176, 198, 255)'>$orientador</p>";
-    echo "</div>";
-    echo "<div class='col'>";
-    echo "<h4 style='background-color:rgb(255, 193, 24)'>Projetos</h4>";
-    echo "<p style='background-color:rgb(176, 198, 255)'>$projetos</p>";
-    echo "</div>";
-    echo "</div>";
-    echo "</div>";
-    echo "</div>";
-    echo "<br>";
+
+    echo "<tr>";
+    echo "<td>$orientador</td>";
+    echo "<td>$projetos</td>";
+    echo "</tr>";
+
 }
-
-
 ?>
-
-
-        </div>
-    </div>
-    <!-- grid do footer -->
-    <?php include_once 'footer.php'; ?>
+                    </tbody>
+                </table>
+            </div>
+            <!-- grid do footer -->
+            <?php include_once 'footer.php'; ?>
 </body>
 
 </html>

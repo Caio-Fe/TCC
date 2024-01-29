@@ -1,6 +1,8 @@
-<?php session_start(); ?>
+<?php session_start();
+include_once 'dbcon.php';
+?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-<br />">
 
 <head>
     <meta charset="UTF-8">
@@ -31,52 +33,48 @@
     <div class="col-lg-6" style="padding-top:100px">
         <div class="container" style=" background-color:#435281;text-align: center;
     margin-left:60% ;margin-right:30%;margin-bottom:15%; margin-top:8%; color:#000;">
-            <h3 style="color:#fff" ; Biblioteca de Trabalhos de Conclusão de <br>
-                Curso da Faculdade de Educação Tecnológica do Estado do Rio de Janeiro
+            <h3 style="color:#fff" ; Biblioteca de Trabalhos de Conclusão de <br />
+            Curso da Faculdade de Educação Tecnológica do Estado do Rio de Janeiro
             </h3>
             <div>
-                <!-- placeholders, não são projetos extraídos de lugar nenhum-->
                 <!--Grid do counteudo 1-->
                 <div class="row" style="padding:10px">
                     <div class="col bg-white" style="margin-right:10px">
                         <h5>Trabalho de Conclusão de Curso</h5>
                         <div>
-                            <!-- placeholders, não são projetos extraídos de lugar nenhum-->
                             <p style="text-align:left;padding:12%">
-                                Implementação de um servidor<br> utilizando Linux embarcado
-                                <br>
-                                com acesso e gerenciamento...
-                                <br>
-                                <br>
-                                Barros, André Ricardo Gouveia
-                                <br>
-                                <br>
-                                Com o surgimento de sistemas embarcados com propositos educacionais a
-                                criacao de projetos embarcados tornou-se economicamente viavel, aumentando
-                                o numero de usuarios que se aventuram nessa área. Neste...
-                                <br>
-                                Ver mais
-                            </p> <!-- seria um botão para o link do projeto-->
+                                <?php
+                            $sql = "SELECT titulo, resumo, id FROM projects ORDER BY RAND() LIMIT 1";
+$selectQuery = mysqli_query($con, $sql);
+while($result = mysqli_fetch_assoc($selectQuery)) {
+    echo $result['titulo']; ?> <br /><?php
+    $resumo = (strlen($result['resumo']) > 300) ? substr($result['resumo'], 0, 300).'...' : $result['resumo'];
+    echo $resumo;
+    ?><br />
+                                <br />
+                                <a
+                                    href="projetoDetalhes.php?id=<?php echo $result['id']; ?>">
+                                    <?php echo 'ver mais';
+}?></a>
+                            </p>
                         </div>
                     </div>
+
                     <!--Grid do conteudo 2-->
                     <div class="col bg-white">
                         <h5>Últimos trabalhos</h5>
-                        <br>
-                        <!-- placeholders, não são projetos extraídos de lugar nenhum
-                    cada um teria o link para acesso do respectivo projeto-->
-                        <p style="text-align:left;padding:12%">
-                            > Avaliação do potencial de deriva e uniformidade de distribuição utilizando ponta...
-                            <br>
-                            > Mapeamento de produções acadêmicas em universidades públicas do Brasil: relevância...
-                            <br>
-                            > Sugestão de amostragem para análise de atributos físicos do
-                            solo orientada pelo mapeamento...
-                            <br>
-                            > Análise de microvestígios em sedimentos e solos às margens
-                            do rio Piracicaba e avaliação...
-                            <br>
-                            > Avaliação do solo em diferentes sistemas agroflorestais e no sistema convencional...
+                        <p style="text-align:left; padding:5%">
+                            <?php
+        $sql = "SELECT id, titulo FROM projects ORDER BY ano  DESC LIMIT 5";
+$squery = mysqli_query($con, $sql);
+while ($result = mysqli_fetch_assoc($squery)) {?>
+                        <p>>
+                            <a
+                                href='projetoDetalhes.php?id=<?php echo $result['id'] ?>'>
+                                <?php echo $result['titulo']?></a><br />
+                        </p>
+                        <?php
+} ?>
                         </p>
                     </div>
                 </div>

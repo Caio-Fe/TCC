@@ -76,7 +76,7 @@ include_once 'dbcon.php';
                     if ($iquery) {
                         ?>
                 <div class="alert alert-success alert-dismissible">
-                    <a href="index.php" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <a href="resultadoBusca.php" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                     <strong>Cadastro realizado com sucesso!</strong>
                 </div>
                 <?php

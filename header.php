@@ -14,6 +14,11 @@
                     <li class="nav-item">
                         <a class="btn btn-outline-light btn" href="index.php">Início</a>
                     </li>
+                    <li>
+                        <a href="resultadoBusca.php">
+                            <button class="btn btn-outline-light">Buscar</button>
+                        </a>
+                    </li>
                     <?php if(!isset($_SESSION['autenticado'])) {?>
                     <li class="nav-item ">
                         <a class="btn btn-primary" href="login.php">Login</a>
@@ -29,10 +34,6 @@
                     <?php }?>
                 </ul>
             </div>
-            <form class="d-flex" style="padding-right:10%">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-light" type="submit">Buscar</button>
-            </form>
         </div>
     </nav>
 </div>

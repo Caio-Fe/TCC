@@ -1,23 +1,32 @@
 <?php
 // verify if user is logged with profile admin
-require 'validador_acesso.php';
+include_once 'validador_acesso.php';
+include_once 'dbcon.php';
 
 // verify if form was submitted
 if (isset($_POST['submit'])) {
-    // include database connection
-    include_once 'dbcon.php';
-
     // get values from form
     $email = $_POST['email'];
     $password = $_POST['password'];
     $perfil_id = $_POST['perfil_id'];
-
-    // insert query on database
+    //verify if this email is already registered
+    $sql = "SELECT * FROM users WHERE email = '$email' ";
     $result = mysqli_query(
         $con,
-        "INSERT INTO users(email, password, perfil_id)
-            VALUES ('$email', '$password', '$perfil_id')"
-    );
+        $sql
+    ); // execute query
+    $resultCheck = mysqli_num_rows($result); // verifica rows da query
+    if ($resultCheck > 0) {
+        header('Location: listarUsuarios.php?error=emailexistente');
+    } else {
+        // insert query on database
+        $sql = "INSERT INTO users(email, password, perfil_id)
+            VALUES ('$email', '$password', '$perfil_id')";
+        $result = mysqli_query(
+            $con,
+            $sql
+        );
+    }
 }
 ?>
 <!DOCTYPE html>

@@ -21,16 +21,6 @@
                             </svg>Orientador
                         </a>
                     </li>
-                    <!-- bloated code palavras-chave não escala legal
-                    <li>
-                        <a href="palavrachave.php" class="nav-link link-dark bg-light"
-                            style="margin-top:2px;color:#435281;">
-                            <svg class="bi me-2" width="16" height="16">
-                                <use xlink:href="bootstrap-icons.svg#key" />
-                            </svg>Palavra-Chave
-                        </a>
-                    </li>
--->
                     <?php if(isset($_SESSION['autenticado'])) {
                         if ($_SESSION['perfil_id'] == '1') {?>
                     <li>
@@ -39,6 +29,14 @@
                             <svg class="bi me-2" width="16" height="16">
                                 <use xlink:href="bootstrap-icons.svg#person-add" />
                             </svg>Cadastrar Usuario
+                        </a>
+                    </li>
+                    <li>
+                        <a href="listarUsuarios.php" class="nav-link link-dark bg-light"
+                            style="margin-top:2px; color:#435281;">
+                            <svg class="bi me-2" width="16" height="16">
+                                <use xlink:href="bootstrap-icons.svg#person-gear" />
+                            </svg>Listar Usuarios
                         </a>
                     </li>
                     <?php } if ($_SESSION['perfil_id'] == '2') {?>

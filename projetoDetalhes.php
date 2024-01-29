@@ -120,14 +120,6 @@ if(isset($_GET['id'])) {
                         </a>
                     </li>
                     <li>
-                        <a href="#curso" class="nav-link link-dark bg-light" style="margin-top:2px">
-                            <svg class="bi me-2" width="16" height="16">
-                                <use xlink:href="#curso"></use>
-                            </svg>
-                            Curso
-                        </a>
-                    </li>
-                    <li>
                         <a href="#unidade" class="nav-link link-dark bg-light" style="margin-top:2px">
                             <svg class="bi me-2" width="16" height="16">
                                 <use xlink:href="#unidade"></use>
@@ -140,10 +132,10 @@ if(isset($_GET['id'])) {
         </div>
     </div>
     <!-- projeto dados-->
-    <div class="col-lg-6" style="padding-top:100px">
+    <div class="col-lg-6" style="padding-top:100px;">
         <div class="container"
             style=" background-color: rgb(176, 191, 255);text-align: center; margin-left:50% ;margin-right:50%;margin-bottom:30%">
-            <h3>
+            <h5>
                 <p style="text-align:left;margin-top: 5%;padding-left: 5%;padding-top: 5%;">Título<a name="titulo"></a>
                 </p>
                 <br />
@@ -156,16 +148,16 @@ if(isset($_GET['id'])) {
                 <br />
                 <p style="text-align:left;padding-left: 5%;"> Orientador:<a name="orientador"></a></p><br />
                 <?php echo $result['orientador']?><br /><br />
-            </h3>
+            </h5>
             <hr>
-            <h4>
+            <h5>
                 <p>Resumo<a name="resumo"></a></p><br />
-            </h4>
+            </h5>
             <p style="padding-left:5%;padding-right: 5%">
                 <?php echo $result['resumo']?>
             </p>
             <hr>
-            <h3>Abstract<a name="absract"></a></h3><br />
+            <h5>Abstract<a name="abstract"></a></h5><br />
             <p style="padding-left:5%;padding-right: 5%">
                 <?php echo $result['abstract']?>
             </p>

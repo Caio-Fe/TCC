@@ -1,5 +1,6 @@
 <div>
-    <nav class="navbar navbar-expand-lg navbar-dark position-fixed" style="background-color: #435281;width:100%;">
+    <nav class="navbar navbar-expand-lg navbar-dark position-fixed"
+        style="background-color: #435281;width:100%; height:75px;">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php">
                 <img src="img/images.jpeg" alt="FAETERJ-Rio" width="300" height="70">

@@ -63,8 +63,13 @@ foreach($anos as $ano) {
     while ($result = mysqli_fetch_assoc($squery)) {
         $projetos++;
     }
-    echo "<tr>";
-    echo "<td>$ano</td>";
+    echo "<tr>";?>
+                        <td>
+                            <a
+                                href="resultadoBusca.php?search=<?php echo $ano ?>">
+                                <?php echo $ano ?></a>
+                        </td>
+                        <?php
     echo "<td>$projetos</td>";
     echo "</tr>";
 }

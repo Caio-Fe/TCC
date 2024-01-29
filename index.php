@@ -34,7 +34,7 @@ include_once 'dbcon.php';
         <div class="container" style=" background-color:#435281;text-align: center;
     margin-left:60% ;margin-right:30%;margin-bottom:15%; margin-top:8%; color:#000;">
             <h3 style="color:#fff" ; Biblioteca de Trabalhos de Conclusão de <br />
-            Curso da Faculdade de Educação Tecnológica do Estado do Rio de Janeiro
+            Faculdade de Educação Tecnológica do Estado do Rio de Janeiro
             </h3>
             <div>
                 <!--Grid do counteudo 1-->
@@ -65,7 +65,7 @@ while($result = mysqli_fetch_assoc($selectQuery)) {
                         <h5>Últimos trabalhos</h5>
                         <p style="text-align:left; padding:5%">
                             <?php
-        $sql = "SELECT id, titulo FROM projects ORDER BY ano  DESC LIMIT 5";
+        $sql = "SELECT id, titulo FROM projects ORDER BY id  DESC LIMIT 5";
 $squery = mysqli_query($con, $sql);
 while ($result = mysqli_fetch_assoc($squery)) {?>
                         <p>>

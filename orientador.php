@@ -30,7 +30,7 @@
     <!--Grid do corpo-->
     <div class="col-lg-6" style="padding-top:100px">
         <div class="container" style=" background-color:#435281;text-align: center;
-    margin-left:60% ;margin-right:30%;margin-bottom:15%; margin-top:8%; color:#000;">
+    margin-left:60% ;margin-right:30%;margin-bottom:15%; margin-top:8%; color:#000; padding-top:30px;">
             <?php
 include_once 'dbcon.php';
 $selectQuery = 'SELECT orientador FROM projects';
@@ -64,8 +64,13 @@ foreach($orientadores as $orientador) {
         $projetos++;
     }
 
-    echo "<tr>";
-    echo "<td>$orientador</td>";
+    echo "<tr>";?>
+                        <td>
+                            <a
+                                href="resultadoBusca.php?search=<?php echo $orientador ?>">
+                                <?php echo $orientador; ?></a>
+                        </td>
+                        <?php
     echo "<td>$projetos</td>";
     echo "</tr>";
 
